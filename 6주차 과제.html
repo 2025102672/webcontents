@@ -77,9 +77,32 @@
     <article id="time">
         <h3 style="text-decoration: none; text-shadow: 2px 2px 4px skyblue;">강의 시간표(2025년 1학기)</h3>
     <hr>
-    <table border="1">
         <thead>
-            <tr><th>구분</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr></thead>
+            <style>
+                table {
+                    width: 100%;
+                    border: 1px solid;
+                    border-collapse: collapse;
+                }
+                th, td {
+                    border: 1px solid;
+                }
+                th, td {
+                    border : 1px solid;
+                }
+                thead, tfoot {
+                    background-color: darkgrey;
+                    color: yellow;
+                }
+                tbody tr:nth-child(even) {
+                    background-color: aliceblue;
+                }
+                tbody tr:hover {
+                    background-color: pink;
+                }
+                </style></thead>
+                <table>
+            <tr><th>구분</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
             <tbody>
                 <tr><th>09</td><th></th><th></th><th></th><th></th><th></th></tr>
                 <tr><th>10</th><th></th><th></th><th rowspan='2'>sw개발문제 해결능력<br>(101/공 609)</th><th rowspan="3">인터넷 콘텐츠<br>(101/공 615)</th><th>인성 채플<br>(106/공B 101)</th></tr>
